@@ -51,3 +51,23 @@ listOfAnimals.forEach(function (oneAnimal) {
 console.log( listOfAnimals );
 console.log( listOfLengths );
 console.log( uppercased );
+
+
+
+console.log('-----------------');
+console.log('Exercise Solution:');
+
+var cities = ["miami", "barcelona", "madrid", "las vegas"];
+
+var capsCities = cities.map(function (oneCity) {
+  var cityWords = oneCity.split(' ');
+  var finalName = "";
+
+  cityWords.forEach(function (oneWord) {
+    finalName += oneWord[0].toUpperCase() + oneWord.slice(1) + ' ';
+  });
+
+  return finalName;
+});
+
+console.log(capsCities);
