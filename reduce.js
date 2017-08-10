@@ -70,3 +70,26 @@ listOfAnimals.forEach(function (oneAnimal) {
 adMessage += ' and Dwayne Johnson (The Rock).';
 
 console.log( adMessage );
+
+
+
+
+console.log('-----------------');
+console.log('Exercise Solution:');
+
+var menu = [
+  { name: "Carrots", calories: 150 },
+  { name: "Steak", calories: 350 },
+  { name: "Broccoli", calories: 120 },
+  { name: "Chicken", calories: 250 },
+  { name: "Pizza", calories: 520 }
+];
+
+var totalCalories = menu.reduce(function (previousResult, oneFood) {
+  return previousResult + oneFood.calories;
+}, 0);
+// |
+// Starting value ("previousResult" of the 1st round)
+
+var averageCalories = totalCalories / menu.length;
+console.log(averageCalories);
